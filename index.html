@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Talisa Crisologo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="wolrd-plane" href="world-plane.png">
+        <link rel="shortcut icon" href="world-plane.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/cssmap-continents/cssmap-continents.css" media="screen" />
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+
+        <div class="col-50">
+            <div class="logo">
+                <p>Talisa Crisologo</p>
+            </div>
+        </div>
+
+        <div class="col-50">
+            <div class="navmenu">    
+                <a href="index.html">Home</a>
+                <a href="asia.html">Destination</a>
+                <a href="#">About</a>
+            </div>
+        </div>        
+
+        </nav>
+
+        <!-- Insert interactive map here -->
+        <section class="world-map">
+            <!-- <img src="img/pinkmap.png"> -->
+            <div id="map-continents">
+                <ul class="continents">
+                    <li class="c1"><a href="#africa">Africa</a></li>
+                    <li class="c2"><a href="asia.html">Asia</a></li>
+                    <li class="c3"><a href="#australia">Australia</a></li>
+                    <li class="c4"><a href="#europe">Europe</a></li>
+                    <li class="c5"><a href="#north-america">North America</a></li>
+                    <li class="c6"><a href="#south-america">South America</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut itaque facere quibusdam rerum, maiores consequuntur, aliquam esse blanditiis eum a libero fuga consectetur non neque amet rem impedit quos, fugit. Culpa ratione iure facilis est ea, ducimus neque voluptas fugiat velit unde ipsam suscipit laudantium cupiditate, officiis eaque id? Eaque ad, nisi assumenda facere qui accusantium alias, fugit adipisci natus.</p>
+            <p>Dignissimos quasi nisi maiores dolor sunt. Fuga unde, rem quo sint dolore est pariatur cupiditate nostrum et suscipit, aperiam aliquam officia libero vel error modi ratione, dolorem consectetur doloribus mollitia! Temporibus aliquid laboriosam expedita quia, id consectetur culpa? Enim iusto ab facere aliquid cumque aut amet tenetur dolores, iure tempora perspiciatis incidunt eveniet nostrum, ea esse doloribus labore unde nobis?
+            </p>
+        </section>
+
+        <!-- Insert Instagram feed here -->
+        <section class="instagram-wall">
+        </section>
+
+    <footer>
+        <div class="col-33">
+            <div class="socialicons">
+                <a href="" ><img src="img/fb.svg"></a>
+                <a href="" ><img src="img/twitter.svg"></a>
+                <a href="" ><img src="img/insta.svg"></a>
+            </div>
+        </div>
+
+        <div class="col-33">
+            <div class="email">
+                <input type="text" placeholder="Email Address">
+                <a href="" class="button">Subscribe</a>
+            </div>
+        </div>
+
+        <div class="col-33">
+            <div class="copyright">
+                <h5>&copy;2019 Talisa Crisologo</h5>
+            </div>
+        </div>
+
+    </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+        // CSSMap;
+        $("#map-continents").CSSMap({
+          "size": 1450,
+          "tooltips": "floating-top-center",
+          "responsive": "auto",
+          "fitHeight": true
+        });
+        // END OF THE CSSMap;
+
+        });
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

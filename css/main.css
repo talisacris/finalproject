@@ -35,11 +35,10 @@ a {
 }
 
 header {
-	background-image: url('../img/asia.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	padding: 150px;
-	margin: 0px;
+	background-size: 100%;
 }
 
 h1 {
@@ -53,6 +52,12 @@ h1 {
 
 h5 {
 	color: white;
+	margin: 0px;
+	padding-top: 10px;
+}
+
+section {
+	margin: 0px;
 }
 
 footer {
@@ -79,11 +84,19 @@ input {
 	text-align: center;
 }
 
+.asia-header {
+	background-image: url('../img/asia.jpg');
+}
+
+.kyoto-header {
+	background-image: url('../img/kyotoheader.jpg');
+}
+
 .socialicons img {
 	width: 25px;
 	height: 25px;
 	color: white;
-	justify-content: right;
+	float: left;
 	margin: 5px
 }
 
@@ -95,26 +108,28 @@ input {
 	width: 33.3333%;
 	padding: 10px;
 	display: inline-block;
-	width: 341px;
-	height: 512px;
 	margin: 20px auto;
 	position: relative;
 	overflow: hidden;
 }
 
 .overlay {
-	width: 341px;
-	height: 512px;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 0px;
 	transition: all 300ms ease-in;
 	opacity: 0;
 	background-color: white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events:none
 }
 
-.col-33:hover .overlay {
-	/* what does the overlay look like when it's hovered? */
-	opacity: 0.3;
+.overlay-wrapper:hover .overlay {
+	opacity: 1;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .visual {
@@ -126,12 +141,12 @@ input {
 	padding: 10px;
 	flex-wrap: wrap;
 	text-align: center;
-	line-height: 512px;
 	font-size: 40px;
 	font-family: sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
-	color: black;
+	color: white;
+	font-weight: bold;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -153,19 +168,19 @@ input {
 
 .restaurants {
 	background-color: #F4F4F4;
+	padding-top: 10px;
 }
 
 
 .logo {
 	text-align: left;
 	padding-left: 20px;
+	padding-top: 15px;
 }
 
 .navmenu {
 	text-align: right;
-	word-spacing: 50px;
 	padding-right: 20px;
-	padding-top: 15px;
 }
 
 .subscribe {
@@ -177,4 +192,63 @@ input {
 
 .copyright {
 	text-align: right;
+}
+
+/*dropdown*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*instagram wall*/
+.instagram-wall {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
